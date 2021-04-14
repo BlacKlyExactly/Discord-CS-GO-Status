@@ -1,6 +1,6 @@
 import { Message, MessageEmbed } from "discord.js";
 import { Command, Server, Stats } from "../../utils/models";
-import { saveToDatabase, getStatsFromDatabase } from "../../utils/functions";
+import { saveToDatabase, getStatsFromDatabase, refreshServers } from "../../utils/functions";
 
 const setserver: Command = {
     trigger: "setserver",
@@ -48,7 +48,8 @@ const setserver: Command = {
             "servers": servers,
         }
 
-        saveToDatabase(stats);
+        await saveToDatabase(stats);
+        refreshServers();
     }
 }
 
