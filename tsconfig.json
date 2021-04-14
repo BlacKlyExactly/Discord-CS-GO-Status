@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "commonjs",
+		"outDir": "./build",
+		"rootDir": "./src",
+		"declaration": false,
+		"strict": true,
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"alwaysStrict": true,
+		"typeRoots": [
+            "./node_modules/@types"
+        ]
+	},
+	"exclude": [
+		"./node_modules/*",
+		"./src/database.json"
+	],
+	"include": [
+		"./src/**/*.ts"
+	]
+}
