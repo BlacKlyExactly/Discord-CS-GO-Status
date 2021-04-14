@@ -1,7 +1,8 @@
 # Discord CS:GO Status
 
 ## Description
-Discord bot written in typescript, has been made for create nice looking message embeds which inform about cs go servers you set in command
+Discord bot written in typescript, has been made for create nice looking message embeds which inform about cs go servers you set in command. It's refreshing every 30 seconds
+![screen](https://i.imgur.com/1BfDN3A.png)
 
 ## Configuration
 1. Clone or download this repo
